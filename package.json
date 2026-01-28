@@ -7,11 +7,15 @@
   "scripts": {
     "build": "pnpm run --filter @repo/build build",
     "changeset": "changeset",
+    "checkTypes": "tsgo -b --noEmit",
     "commit": "cz",
     "dev": "pnpm run --filter @repo/build dev",
+    "lint": "run-p lint:cspell lint:es lint:oxfmt",
     "lint:cspell": "cspell --no-summary --no-progress",
     "lint:es": "eslint . --fix --report-unused-disable-directives --max-warnings 0",
-    "lint:prettier": "prettier --ignore-unknown --write .",
+    "lint:es:dry": "eslint . --report-unused-disable-directives --max-warnings 0",
+    "lint:oxfmt": "oxfmt --write .",
+    "lint:oxfmt:dry": "oxfmt --check .",
     "prepare": "husky",
     "release": "changeset publish",
     "version-packages": "changeset version"
@@ -29,6 +33,7 @@
     "@total-typescript/ts-reset": "catalog:",
     "@types/lint-staged": "catalog:",
     "@types/node": "catalog:",
+    "@typescript/native-preview": "catalog:",
     "@vp-tw/eslint-config": "catalog:",
     "@vp-tw/tsconfig": "workspace:*",
     "commitizen": "catalog:",
@@ -41,12 +46,13 @@
     "husky": "catalog:",
     "jiti": "catalog:",
     "lint-staged": "catalog:",
-    "prettier": "catalog:",
+    "npm-run-all2": "catalog:",
+    "oxfmt": "catalog:",
     "typescript": "catalog:"
   },
-  "packageManager": "pnpm@10.17.0+sha512.fce8a3dd29a4ed2ec566fb53efbb04d8c44a0f05bc6f24a73046910fb9c3ce7afa35a0980500668fa3573345bd644644fa98338fa168235c80f4aa17aa17fbef",
   "engines": {
     "node": ">=22",
     "pnpm": ">=9"
-  }
+  },
+  "packageManager": "pnpm@10.28.2+sha512.41872f037ad22f7348e3b1debbaf7e867cfd448f2726d9cf74c08f19507c31d2c8e7a11525b983febc2df640b5438dee6023ebb1f84ed43cc2d654d2bc326264"
 }

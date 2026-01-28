@@ -1,8 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "VdustR Bundler",
-  "extends": [
-    "@vp-tw/tsconfig/base/node/tsconfig",
-    "@vp-tw/tsconfig/ext/bundler/tsconfig"
-  ]
+  "extends": ["@vp-tw/tsconfig/base/node/tsconfig", "@vp-tw/tsconfig/ext/bundler/tsconfig"]
 }
