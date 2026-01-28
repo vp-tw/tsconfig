@@ -1,5 +1,14 @@
 # @vp-tw/tsconfig
 
+## 4.0.0
+
+### Major Changes
+
+- 21c38ea: BREAKING CHANGE: Rename `base/node23` to `base/node24`
+
+  - Migrate tooling: tsc → tsgo, Prettier → oxfmt
+  - Add CI check workflow
+
 ## 3.2.1
 
 ### Patch Changes
