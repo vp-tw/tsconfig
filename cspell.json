@@ -27,8 +27,10 @@
     "jsdoc",
     "nums",
     "nvmrc",
+    "oxfmt",
     "pathe",
     "tsdoc",
+    "tsgo",
     "unrs",
     "vite",
     "zustand"
