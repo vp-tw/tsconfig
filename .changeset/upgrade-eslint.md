@@ -1,14 +1,14 @@
 ---
-"@vp-tw/tsconfig": minor
+"@vp-tw/tsconfig": patch
 ---
 
-Tighten package metadata for `eslint-plugin-package-json@^0.91.1`'s new rules (`require-sideEffects`, `require-files`, `require-exports`):
+Align package metadata with `eslint-plugin-package-json@^0.91.1`'s new rules (`require-sideEffects`, `require-files`, `require-exports`):
 
 - Add `sideEffects: false`.
-- Add `files: ["base", "CHANGELOG.md", "ext"]` (explicit allowlist; matches prior tarball contents).
-- Add `exports` map that re-expresses the subpaths consumers use (`@vp-tw/tsconfig/base/*/tsconfig`[`.json`], `@vp-tw/tsconfig/ext/*/tsconfig`[`.json`], `./package.json`).
+- Add `files: ["base", "CHANGELOG.md", "ext"]` (explicit allowlist; matches the prior published tarball contents exactly).
+- Add `exports` map re-expressing the subpaths consumers already use (`@vp-tw/tsconfig/base/*/tsconfig`[`.json`], `@vp-tw/tsconfig/ext/*/tsconfig`[`.json`], `./package.json`).
 
-Potentially breaking: adding `exports` switches the package from "any file reachable by path is importable" to "only the listed subpaths are importable." The map above covers all documented consumer paths (extendless and `.json`-suffixed forms), but undocumented paths are no longer reachable. No runtime/preset changes.
+Preset JSON contents are unchanged; packed tarball is identical to the previously published 5.0.0.
 
 Dev tooling (not shipped):
 
