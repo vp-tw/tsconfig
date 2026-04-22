@@ -5,7 +5,7 @@ packages:
   - packages/*
 
 overrides:
-  undici-types: ^6.25.0
+  "@types/node@22>undici-types": ^6.25.0
 
 catalog:
   "@antfu/eslint-config": ^7.2.0
