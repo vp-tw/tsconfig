@@ -22,7 +22,20 @@
     "type": "git",
     "url": "git+https://github.com/vp-tw/tsconfig.git"
   },
+  "files": [
+    "base",
+    "CHANGELOG.md",
+    "ext"
+  ],
   "type": "module",
+  "sideEffects": false,
+  "exports": {
+    "./base/*/tsconfig": "./base/*/tsconfig.json",
+    "./base/*/tsconfig.json": "./base/*/tsconfig.json",
+    "./ext/*/tsconfig": "./ext/*/tsconfig.json",
+    "./ext/*/tsconfig.json": "./ext/*/tsconfig.json",
+    "./package.json": "./package.json"
+  },
   "publishConfig": {
     "access": "public"
   },
