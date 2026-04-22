@@ -1,6 +1,6 @@
 {
   "name": "@vp-tw/tsconfig",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "Common tsconfig presets collection",
   "keywords": [
     "config",
