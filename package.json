@@ -20,16 +20,12 @@
     "release": "changeset publish",
     "version-packages": "changeset version"
   },
-  "dependencies": {
-    "pathe": "catalog:"
-  },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:",
     "@changesets/cli": "catalog:",
     "@commitlint/cli": "catalog:",
     "@commitlint/config-conventional": "catalog:",
     "@commitlint/types": "catalog:",
-    "@eslint/compat": "catalog:",
     "@total-typescript/ts-reset": "catalog:",
     "@types/lint-staged": "catalog:",
     "@types/node": "catalog:",
