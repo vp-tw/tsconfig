@@ -33,4 +33,4 @@ For other extends utilities, check: <https://github.com/VdustR/tsconfig/tree/mai
 
 [MIT](./LICENSE)
 
-Copyright (c) 2024 ViPro <vdustr@gmail.com> (<http://vdustr.dev>)
+Copyright (c) 2024 ViPro <vdustr@gmail.com> (<https://vdustr.github.io>)
